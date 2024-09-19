@@ -9,7 +9,7 @@ def main():
 def path_to_document(path): #it is done
 
     with open(path) as f:
-            file_contents = f.read()
+        file_contents = f.read()
     return file_contents
 
 
@@ -40,9 +40,17 @@ def count_char(text): # it is done
 
 def log_message(word_count, char_count): # in progress
      
+     list_from_dictionary = []
+     
      print("--- Begin report of books/frankenstein.txt ---")
      print(f"{word_count} was found in the document")
-     print(f"{char_count}")
+     print(list(char_count))
+     
+         
+
+
+     #list_from_dictionary.append(char_count)
+     #print(list_from_dictionary)
 
 
 
