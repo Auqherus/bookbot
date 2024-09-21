@@ -45,7 +45,7 @@ def log_message(word_count, char_count): # it is done
      print("--- Begin report of books/frankenstein.txt ---\n")
      print(f"{word_count} words was found in the document\n")
 
-     for key, char in char_count.items(): # done with making list of dictionares
+     for key, char in char_count.items(): # done with making list of dictionaries
          if key.isalpha():
             list_from_dictionary.append({key:char})
 
