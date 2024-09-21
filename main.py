@@ -1,7 +1,7 @@
 def main():
      book_path = "/home/auqherus/workspace/github.com/Auqherus/bookbot/books/frankenstein.txt"
      path = path_to_document(book_path) # it's a path with file contents(book)
-     words_number = count_words(path) #its a number = 77986
+     words_number = count_words(path) #it's a number = 77986
      char_dict = count_char(path)
      log_message(words_number, char_dict)
    
