@@ -34,7 +34,7 @@ def count_char(text): # it is done
         elif char not in dict_with_counted_chars:
              dict_with_counted_chars[char] = 1
 
-    print(dict_with_counted_chars)
+    #print(dict_with_counted_chars)
     return dict_with_counted_chars
 
 
@@ -43,16 +43,10 @@ def log_message(word_count, char_count): # in progress
      list_from_dictionary = []
      
      print("--- Begin report of books/frankenstein.txt ---")
-     print(f"{word_count} was found in the document")
+     print(f"{word_count} words was found in the document")
 
 
 
-
-     list_of_dict = [{a:b} for a, b in char_count.items()]
-
-     #sorted_list_of_dict = list_of_dict.sort()
-
-     #print(sorted_list_of_dict)
 
      return None
       
