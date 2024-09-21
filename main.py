@@ -38,17 +38,28 @@ def count_char(text): # it is done
     return dict_with_counted_chars
 
 
-def log_message(word_count, char_count): # in progress
+def log_message(word_count, char_count): # it is done
      
      list_from_dictionary = []
      
-     print("--- Begin report of books/frankenstein.txt ---")
+     print("--- Begin report of books/frankenstein.txt ---\n")
      print(f"{word_count} words was found in the document")\
 
-     for key, char in char_count.items():
-         list_from_dictionary.append({key:char})
+     for key, char in char_count.items(): # done with making list of dictionares
+         if key.isalpha():
+            list_from_dictionary.append({key:char})
 
-     print(list_from_dictionary)
+     list_from_dictionary.sort(key=lambda x: list(x.values())[0], reverse=True) # done with sorting list from highest to lowest
+
+     #print(list_from_dictionary)
+
+     for word in list_from_dictionary:
+         char = list(word.items())[0][0]
+         value = list(word.items())[0][1]
+         print(f"The '{char}' character was found {value} times")
+
+     print("\n--- End report of books ---")
+
 
 
 
