@@ -29,9 +29,9 @@ def count_char(text): # it is done
     book_text = text.lower()
 
     for char in book_text:
-        if char.isalpha() in dict_with_counted_chars:
+        if char in dict_with_counted_chars:
             dict_with_counted_chars[char] += 1
-        elif char.isalpha() not in dict_with_counted_chars:
+        elif char not in dict_with_counted_chars:
              dict_with_counted_chars[char] = 1
 
     print(dict_with_counted_chars)
