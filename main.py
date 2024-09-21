@@ -43,7 +43,15 @@ def log_message(word_count, char_count): # in progress
      list_from_dictionary = []
      
      print("--- Begin report of books/frankenstein.txt ---")
-     print(f"{word_count} words was found in the document")
+     print(f"{word_count} words was found in the document")\
+
+     for key, char in char_count.items():
+         list_from_dictionary.append({key:char})
+
+     print(list_from_dictionary)
+
+
+
 
 
 
