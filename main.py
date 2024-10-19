@@ -60,14 +60,6 @@ def log_message(word_count, char_count): # it is done
 
      print("\n--- End report of books ---")
 
-
-
-
-
-
-
-
-     return None
-      
+     return None      
 
 main()
